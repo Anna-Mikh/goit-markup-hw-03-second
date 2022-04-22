@@ -39,7 +39,7 @@ img {
 
 .header {
     background: #FFFFFF;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .container {
@@ -51,6 +51,10 @@ img {
        
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /*Logo*/
 .logo {
@@ -63,8 +67,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-right: 93px;
     display: block;
 }
@@ -79,24 +83,13 @@ img {
     letter-spacing: 0.03em;
 }
 
-.logo-half-footer {
-    font-family: 'Raleway';
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-
-
-
 
 /*Hero*/
 .hero {
     background: #2F303A;
-    height: 600px;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -106,8 +99,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-color);
-    padding-top: 200px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .hero-button {
@@ -134,7 +126,6 @@ img {
 .nav {
     display: flex;
 }
-
 
 .nav-secondary {
     display: flex;
@@ -191,8 +182,8 @@ img {
     color: var(--sekondary-color);
 }
 
-/*Main*/
 
+/*Main*/
 
 .text-title {
     color: var(--title-text-color);
@@ -238,8 +229,6 @@ img {
 .peculiarities {
     display: flex;
     margin: -15px;
-    padding-top: 94px;
-
 }
 
 .peculiarities .item {
@@ -251,15 +240,13 @@ img {
 /*Чем мы занимаемся*/
 
 .title.question {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .doing {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 
 /*Наша команда*/
@@ -269,7 +256,6 @@ img {
 }
 
 .title.team {
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -277,22 +263,21 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 
 .item .text-title {
-    padding-top: 30px;
     padding-bottom: 10px;
     text-align: left;
 }
 
 .item .text {
-    padding-bottom: 30px;
     text-align: left;
 }
 
 .frame {
     background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .frame .text-title {
@@ -307,11 +292,32 @@ img {
 
 .footer {
     background: #2F303A; 
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.logo.footer {
-    padding-top: 60px;
-    padding-bottom: 20px;
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    color: var(--sekondary-color);
+    text-decoration: none;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    display: block;
+    margin-bottom: 20px;
+    }
+
+.logo-half-footer {
+    font-family: 'Raleway';
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .address {
@@ -320,13 +326,9 @@ img {
 
 .address-text {
     color: #ffffff;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
-.tel {
-    padding-bottom: 9px;
-    padding-bottom: 60px;
-}
 .address-link {
     font-weight: 400;
     font-size: 14px;
@@ -336,15 +338,18 @@ img {
     text-decoration: none;
 }
 
+.address-nav:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
 /*Страница Portfolio*/
 
 .button-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .button-list .item:not(:last-child) {
@@ -377,27 +382,11 @@ img {
     margin-left: -30px;
 }
 
-
 .work-examples > .item {
-    flex-basis: calc(100% / 3 -30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
 }
-
-/*
-.work-examples .item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.work-examples .item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.work-examples .item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-}
-*/
 
 .text-title-portfolio {
     font-weight: 700;
@@ -419,8 +408,11 @@ img {
     padding-bottom: 20px;
 }
 
+
+
 .border {
     border: 1px solid #EEEEEE;
     border-top: 0;
-
 }
+
+
